@@ -1,27 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Video, Target, Palette, Globe, Check } from "lucide-react";
 
 const services = [
   {
-    icon: "🎞️",
+    icon: Video,
     title: "Video Editing",
     description: "High-quality edits for YouTube, ads, reels, and brand content that captivate your audience.",
     features: ["YouTube Content", "Social Media Ads", "Brand Videos", "Motion Graphics"]
   },
   {
-    icon: "🧠",
+    icon: Target,
     title: "Social Media Marketing",
     description: "Strategic planning and management to boost your online presence and engagement.",
     features: ["Strategy & Planning", "Content Creation", "Page Management", "Paid Advertising"]
   },
   {
-    icon: "🖼️",
+    icon: Palette,
     title: "Graphic Design",
     description: "Eye-catching visuals that communicate your brand message effectively across all platforms.",
     features: ["Logo Design", "Brand Identity", "Marketing Materials", "Digital Assets"]
   },
   {
-    icon: "🌐",
+    icon: Globe,
     title: "Website Creation",
     description: "Modern, responsive websites that reflect your brand and drive conversions.",
     features: ["Custom Design", "Mobile Responsive", "SEO Optimized", "Fast Loading"]
@@ -30,11 +31,11 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="py-24 bg-gradient-subtle">
+    <section className="py-24 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Our <span className="bg-gradient-warm bg-clip-text text-transparent">Services</span>
+            Our <span className="text-primary">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             From video editing to complete digital marketing strategies, we provide comprehensive 
@@ -47,7 +48,9 @@ export const Services = () => {
             <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg">
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="text-4xl">{service.icon}</div>
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                    <service.icon className="w-6 h-6 text-primary-foreground" />
+                  </div>
                   <CardTitle className="text-2xl group-hover:text-primary transition-colors">
                     {service.title}
                   </CardTitle>
@@ -60,7 +63,7 @@ export const Services = () => {
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-3">
-                      <div className="w-2 h-2 rounded-full bg-gradient-warm" />
+                      <Check className="w-4 h-4 text-primary" />
                       <span className="text-muted-foreground">{feature}</span>
                     </li>
                   ))}
@@ -74,7 +77,7 @@ export const Services = () => {
         </div>
         
         <div className="text-center mt-16">
-          <Button variant="warm" size="lg" className="text-lg px-8 py-4">
+          <Button variant="default" size="lg" className="text-lg px-8 py-4">
             Get a Custom Quote
           </Button>
         </div>

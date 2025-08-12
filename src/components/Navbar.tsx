@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import logoSimple from "@/assets/logo-simple.svg";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,8 +18,12 @@ export const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="font-bold text-2xl">
-            <span className="bg-gradient-warm bg-clip-text text-transparent">Backvue</span>
+          <div className="flex items-center">
+            <img 
+              src={logoSimple} 
+              alt="Backvue" 
+              className="h-8 w-auto"
+            />
           </div>
           
           {/* Desktop Menu */}

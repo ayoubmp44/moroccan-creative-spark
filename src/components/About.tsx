@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
 
 export const About = () => {
   return (
@@ -7,7 +8,7 @@ export const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
           {/* Content */}
           <div>
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-warm text-secondary-foreground text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium mb-6">
               About Backvue
             </div>
             
@@ -25,7 +26,7 @@ export const About = () => {
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-primary-foreground text-sm">✓</span>
+                  <Check className="w-4 h-4 text-primary-foreground" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Cultural Authenticity</h3>
@@ -35,7 +36,7 @@ export const About = () => {
               
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-secondary-foreground text-sm">✓</span>
+                  <Check className="w-4 h-4 text-secondary-foreground" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Global Standards</h3>
@@ -45,7 +46,7 @@ export const About = () => {
               
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-accent-foreground text-sm">✓</span>
+                  <Check className="w-4 h-4 text-accent-foreground" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Personal Touch</h3>
@@ -71,20 +72,20 @@ export const About = () => {
               <div className="space-y-6">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Client Retention Rate</span>
-                  <span className="text-2xl font-bold text-primary">95%</span>
+                  <span className="text-2xl font-bold text-foreground">95%</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Project Success Rate</span>
-                  <span className="text-2xl font-bold text-secondary">100%</span>
+                  <span className="text-2xl font-bold text-foreground">100%</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Average Delivery Time</span>
-                  <span className="text-2xl font-bold text-accent">7 Days</span>
+                  <span className="text-2xl font-bold text-foreground">7 Days</span>
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-warm rounded-2xl p-8 text-secondary-foreground">
+            <div className="bg-secondary rounded-2xl p-8 text-secondary-foreground">
               <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
               <p className="mb-6 opacity-90">
                 Let's discuss your project and create something amazing together. 

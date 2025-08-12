@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Mail, MapPin, Clock, Star, Phone } from "lucide-react";
 
 export const Contact = () => {
   return (
     <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-warm rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-warm rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2" />
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-secondary rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
@@ -24,10 +25,36 @@ export const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-primary-foreground hover:bg-white/15 transition-colors">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  WhatsApp
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <a 
+                  href="https://wa.me/212649643446" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/90 hover:text-primary-foreground transition-colors"
+                >
+                  +212 649-643446
+                </a>
+                <p className="text-sm text-primary-foreground/70 mt-2">
+                  Best way to reach us instantly
+                </p>
+              </CardContent>
+            </Card>
+            
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-primary-foreground">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
-                  <span className="text-2xl">📧</span>
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                    <Mail className="w-5 h-5" />
+                  </div>
                   Email Us
                 </CardTitle>
               </CardHeader>
@@ -42,7 +69,9 @@ export const Contact = () => {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-primary-foreground">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
-                  <span className="text-2xl">🇲🇦</span>
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                    <MapPin className="w-5 h-5" />
+                  </div>
                   Location
                 </CardTitle>
               </CardHeader>
@@ -57,7 +86,9 @@ export const Contact = () => {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-primary-foreground">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
-                  <span className="text-2xl">⏰</span>
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                    <Clock className="w-5 h-5" />
+                  </div>
                   Business Hours
                 </CardTitle>
               </CardHeader>
@@ -96,13 +127,20 @@ export const Contact = () => {
                   </div>
                   
                   <div className="space-y-4">
-                    <Button 
-                      variant="secondary" 
-                      size="lg" 
-                      className="text-lg px-8 py-4 w-full sm:w-auto shadow-warm"
+                    <a 
+                      href="https://wa.me/212649643446" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
                     >
-                      Get Free Consultation
-                    </Button>
+                      <Button 
+                        variant="secondary" 
+                        size="lg" 
+                        className="text-lg px-8 py-4 w-full sm:w-auto shadow-subtle"
+                      >
+                        <Phone className="w-5 h-5 mr-2" />
+                        WhatsApp Us Now
+                      </Button>
+                    </a>
                     <div className="text-sm text-primary-foreground/70">
                       No commitment required • Quick response guaranteed
                     </div>
@@ -117,7 +155,11 @@ export const Contact = () => {
         <div className="text-center mt-16">
           <p className="text-primary-foreground/70 mb-4">Trusted by startups and established brands</p>
           <div className="flex justify-center items-center gap-8 text-primary-foreground/50">
-            <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+            <div className="flex gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 fill-current" />
+              ))}
+            </div>
             <span>|</span>
             <span>50+ Happy Clients</span>
             <span>|</span>

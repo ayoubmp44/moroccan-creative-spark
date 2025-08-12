@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
+import { MapPin } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -11,7 +12,7 @@ export const Hero = () => {
           alt="Backvue Creative Agency Team"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-hero opacity-80" />
+        <div className="absolute inset-0 bg-primary opacity-60" />
       </div>
       
       {/* Content */}
@@ -19,13 +20,14 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
-            <span className="text-sm font-medium">🇲🇦 Based in Morocco</span>
+            <MapPin className="w-4 h-4 mr-2" />
+            <span className="text-sm font-medium">Based in Morocco</span>
           </div>
           
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             We Turn Your Brand Into
-            <span className="block bg-gradient-warm bg-clip-text text-transparent">
+            <span className="block text-white">
               Digital Magic
             </span>
           </h1>
@@ -38,7 +40,7 @@ export const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+            <Button variant="secondary" size="lg" className="text-lg px-8 py-4">
               Start Your Project
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white hover:text-primary">
