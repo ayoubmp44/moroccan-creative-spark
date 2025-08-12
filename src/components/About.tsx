@@ -76,11 +76,11 @@ export const About = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Project Success Rate</span>
-                  <span className="text-2xl font-bold text-foreground">100%</span>
+                  <span className="text-2xl font-bold text-foreground">90%</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Average Delivery Time</span>
-                  <span className="text-2xl font-bold text-foreground">7 Days</span>
+                  <span className="text-2xl font-bold text-foreground">5 Days</span>
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@ export const About = () => {
                 Let's discuss your project and create something amazing together. 
                 We're here to help bring your vision to life.
               </p>
-              <Button variant="outline" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
+              <Button variant="outline" size="lg">
                 Schedule a Call
               </Button>
             </div>
