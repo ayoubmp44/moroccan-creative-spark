@@ -117,11 +117,11 @@ export const Contact = () => {
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8 max-w-lg mx-auto">
                     <div className="text-center">
-                      <div className="text-3xl font-bold mb-2">Free</div>
+                      <div className="text-3xl font-bold mb-2 text-primary-foreground">Free</div>
                       <div className="text-primary-foreground/80">Initial Consultation</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold mb-2">24h</div>
+                      <div className="text-3xl font-bold mb-2 text-primary-foreground">24h</div>
                       <div className="text-primary-foreground/80">Response Time</div>
                     </div>
                   </div>
