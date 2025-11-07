@@ -9,16 +9,16 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --foreground: 0 3% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card-foreground: 0 3% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover-foreground: 0 3% 14%;
 
     /* Black and white color palette */
-    --primary: 0 0% 0%;  /* Pure black */
+    --primary: 0 3% 14%;  /* #232121 */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 20%;  /* Dark gray */
@@ -35,7 +35,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 95%;
-    --ring: 0 0% 0%;
+    --ring: 0 3% 14%;
 
     /* Simple shadows */
     --shadow-elegant: 0 20px 40px -12px hsl(0 0% 0% / 0.15);

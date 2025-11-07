@@ -1,6 +1,6 @@
 import { Phone } from "lucide-react";
 import { Button } from "./ui/button";
-import logo from "@/assets/logo-simple.svg";
+import logo from "@/assets/logo-backvue.png";
 
 export const ComingSoon = () => {
   return (
@@ -9,7 +9,7 @@ export const ComingSoon = () => {
         <img 
           src={logo} 
           alt="Backvue" 
-          className="h-16 md:h-20 mx-auto mb-12"
+          className="h-24 md:h-32 mx-auto mb-12"
         />
         
         <h1 className="text-5xl md:text-7xl font-bold text-foreground">
